@@ -110,7 +110,7 @@ func main() {
 	exposedChannels.Set(float64(channelCount))
 	log.Infof("found %d channels", channelCount)
 
-	if channelCount > 420 {
+	if channelCount > 42000 {
 		log.Warnln("telly has loaded more than 420 channels. Plex does not deal well with more than this amount and will more than likely hang when trying to fetch channels. You have been warned!")
 	}
 
