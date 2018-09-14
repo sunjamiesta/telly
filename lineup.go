@@ -137,7 +137,7 @@ func (l *lineup) Scan() error {
 		totalAddedChannels = totalAddedChannels + addedChannels
 	}
 
-	if totalAddedChannels > 420 {
+	if totalAddedChannels > 9200 {
 		log.Panicf("telly has loaded more than 420 channels (%d) into the lineup. Plex does not deal well with more than this amount and will more than likely hang when trying to fetch channels. You must use regular expressions to filter out channels. You can also start another Telly instance.", totalAddedChannels)
 	}
 
